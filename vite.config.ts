@@ -4,12 +4,19 @@ import * as path from 'path'
 import typescript2 from 'rollup-plugin-typescript2';
 import dts from "vite-plugin-dts";
 
+import { quasar, transformAssetUrls } from '@quasar/vite-plugin'
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),
+    vue({
+      template: { transformAssetUrls }
+    }),
     dts({
       insertTypesEntry: true,
+    }),
+    quasar({
+      sassVariables: 'src/quasar-variables.sass'
     }),
     typescript2({
       check: false,
