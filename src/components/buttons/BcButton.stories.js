@@ -1,52 +1,58 @@
-import MyButton from '../components/button/MyButton.vue';
+import BcButton from './BcButton.vue';
 
 // More on default export: https://storybook.js.org/docs/vue/writing-stories/introduction#default-export
 export default {
   title: 'Example/Button',
-  component: MyButton,
+  component: BcButton,
   // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes
   argTypes: {
-    backgroundColor: { control: 'color' },
     onClick: {},
     size: {
       control: { type: 'select' },
-      options: ['small', 'medium', 'large'],
+      options: ['xs', 'sm', 'md', 'lg', 'xl'],
     },
+    icon: {
+      control: { type: 'select' },
+      options: [
+        'navigation',
+        'add_a_photo',
+        'camera',
+        'camera_front',
+        'my_location',
+      ],
+    },
+    color: {
+      control: { type: 'select' },
+      options: [
+        'primary',
+        'secondary',
+        'amber',
+        'brown-5',
+        'deep-orange',
+        'purple',
+        'black'
+      ],
+    }
   },
 };
 
 // More on component templates: https://storybook.js.org/docs/vue/writing-stories/introduction#using-args
 const Template = (args) => ({
   // Components used in your story `template` are defined in the `components` object
-  components: { MyButton },
+  components: { BcButton },
   // The story's `args` need to be mapped into the template through the `setup()` method
   setup() {
     return { args };
   },
   // And then the `args` are bound to your component with `v-bind="args"`
-  template: '<my-button v-bind="args">teste</my-button>',
+  template: '<BcButton v-bind="args" />',
 });
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/vue/writing-stories/args
 Primary.args = {
-  primary: true,
   label: 'Button',
-};
-
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Button',
-};
-
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: 'Button',
+  loading: false,
+  rounded: false,
+  outline: false,
 };
