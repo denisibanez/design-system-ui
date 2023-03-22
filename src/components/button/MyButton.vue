@@ -1,11 +1,11 @@
 <script setup lang="ts">
   import { reactive } from 'vue';
 
-  interface Props {
+  interface BtnI {
     primary?: boolean;
   }
 
-  const props = withDefaults(defineProps<Props>(), {
+  const props = withDefaults(defineProps<BtnI>(), {
     primary: false,
   });
 
