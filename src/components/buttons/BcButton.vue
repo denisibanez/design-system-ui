@@ -1,6 +1,6 @@
 <template>
   <div class="bcButton__wrapper">
-    teste
+    <q-btn color="primary" icon="mail" label="On Left" />
   </div>
 </template>
 
@@ -19,3 +19,4 @@
 <style lang="scss" scoped>
 
 </style>
+
