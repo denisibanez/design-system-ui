@@ -1,6 +1,18 @@
 <template>
   <div class="bcButton__wrapper">
-    <q-btn color="primary" icon="mail" label="On Left" />
+    <q-btn
+      :color="color"
+      :label="label"
+      :icon="icon"
+      :outline="outline"
+      :round="round"
+      :size="size"
+      :loading="loading"
+    >
+      <template v-slot:loading>
+        <q-spinner-facebook />
+      </template>
+    </q-btn>
   </div>
 </template>
 
@@ -17,6 +29,4 @@
 </script>
 
 <style lang="scss" scoped>
-
 </style>
-

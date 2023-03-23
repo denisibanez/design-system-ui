@@ -53,6 +53,7 @@ export const Primary = Template.bind({});
 Primary.args = {
   label: 'Button',
   loading: false,
-  rounded: false,
+  round: false,
   outline: false,
+  color: 'primary'
 };
