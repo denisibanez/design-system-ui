@@ -40,3 +40,11 @@ The app use:
 * "npm run lint:fix" to check and fix code errors
 * "npm run format" to format code
 * "npm run test" to run tests with jest
+
+# To publish package
+* npm runu build
+* set github token in file .npmrc
+* npm publish
+
+# To install 
+* npm install @denisibanez/design-system-ui@latest

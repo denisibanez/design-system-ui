@@ -1,7 +1,7 @@
 {
   "name": "@denisibanez/design-system-ui",
   "private": false,
-  "version": "0.1.6",
+  "version": "0.1.8",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -72,6 +72,7 @@
   "files": [
     "dist"
   ],
+  "types": "./dist/main.d.ts",
   "main": "./dist/design-system-ui.umd.js",
   "module": "./dist/design-system-ui.es.js",
   "exports": {
