@@ -19,7 +19,7 @@
       "applypatch-msg": "echo \"[Husky] applypatch-msg\"",
       "pre-applypatch": "echo \"[Husky] pre-applypatch\"",
       "post-applypatch": "echo \"[Husky] post-applypatch\"",
-      "pre-commit": "echo \"[Husky] pre-commit\" eslint src --ext .js --fix npx prettier \"src/**/*.{js,jsx,ts,tsx,html,css,scss,vue}\" --write"
+      "pre-commit": "echo \"[Husky] pre-commit\""
     }
   },
   "dependencies": {
