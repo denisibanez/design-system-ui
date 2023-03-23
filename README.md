@@ -16,3 +16,27 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
    1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
    2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
 2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+
+# Informations
+
+The app use:
+
+1. Vue 3
+2. Ts
+3. Vite
+4. Storybook
+5. Jest
+6. Quasar
+7. Prettier
+8. Lint
+9. Husky
+
+# Important commands
+
+* "npm run dev" to run app
+* "npm run build" to build app
+* "npm run storybook" to view Design System
+* "npm run build-storybook" to build Design System
+* "npm run lint:fix" to check and fix code errors
+* "npm run format" to format code
+* "npm run test" to run tests with jest
