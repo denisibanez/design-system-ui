@@ -30,9 +30,9 @@ export default {
         'brown-5',
         'deep-orange',
         'purple',
-        'black'
+        'black',
       ],
-    }
+    },
   },
 };
 
@@ -55,5 +55,5 @@ Primary.args = {
   loading: false,
   round: false,
   outline: false,
-  color: 'primary'
+  color: 'primary',
 };

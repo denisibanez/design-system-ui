@@ -14,7 +14,23 @@ import { Quasar } from 'quasar';
 // This is also where you would setup things such as pinia for storybook
 
 setup((app) => {
-  app.use(Quasar, {});
+  app.use(Quasar, {
+    config: {
+      brand: {
+        primary: '#1976d2',
+        secondary: '#26A69A',
+        accent: '#9C27B0',
+  
+        dark: '#1d1d1d',
+        'dark-page': '#121212',
+  
+        positive: '#21BA45',
+        negative: '#C10015',
+        info: '#31CCEC',
+        warning: '#F2C037'
+      }
+    }
+  });
 });
 
 export const parameters = {
