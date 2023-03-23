@@ -84,7 +84,6 @@
       "require": "./dist/design-system-ui.css"
     }
   },
-  "types": "./dist/main.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/denisibanez/design-system-ui"
