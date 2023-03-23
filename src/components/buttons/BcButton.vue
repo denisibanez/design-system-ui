@@ -1,6 +1,15 @@
 <template>
   <div class="bcButton__wrapper">
-    teste
+    <v-container>
+      <v-row justify="space-between" class="text-center">
+        <v-col>
+          <v-btn
+            icon="mdi-heart"
+            color="primary"
+          ></v-btn>
+        </v-col>
+        </v-row>
+        </v-container>
   </div>
 </template>
 
