@@ -1,4 +1,3 @@
-
 <!-- Example use component -->
 <script setup lang="ts">
 import BcButton from './components/buttons/BcButton.vue';
