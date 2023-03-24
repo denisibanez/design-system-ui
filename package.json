@@ -13,7 +13,7 @@
     "lint:fix": "eslint src --ext \"**/*.{ts,tsx,vue}\" --fix --no-error-on-unmatched-pattern ",
     "format": "npx prettier \"src/**/*.{js,jsx,ts,tsx,html,css,scss,vue}\" --write",
     "prepare": "husky install",
-    "test": "jest -- --coverage"
+    "test": "jest"
   },
   "husky": {
     "hooks": {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1679601325041" clover="3.2.0">
-  <project timestamp="1679601325042" name="All files">
+<coverage generated="1679676460086" clover="3.2.0">
+  <project timestamp="1679676460086" name="All files">
     <metrics statements="19" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2" elements="22" coveredelements="20" complexity="0" loc="19" ncloc="19" packages="1" files="1" classes="1"/>
     <file name="BcButton.vue" path="/Users/denisibanezrodriguesvieira/Documents/Projetos/master/components/purevite/design-system-ui/src/components/buttons/BcButton.vue">
       <metrics statements="19" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
