@@ -1,13 +1,13 @@
 <template>
   <div class="bcButton__wrapper">
     <q-btn
-      :color="color"
-      :label="label"
-      :icon="icon"
-      :outline="outline"
-      :round="round"
-      :size="size"
-      :loading="loading"
+        :color="color"
+        :label="label"
+              :icon="icon"
+        :outline="outline"
+         :round="round"
+          :size="size"
+       :loading="loading"
     >
       <template v-slot:loading>
         <q-spinner-facebook />
