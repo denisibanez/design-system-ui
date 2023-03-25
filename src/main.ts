@@ -16,6 +16,7 @@ import '@quasar/extras/mdi-v6/mdi-v6.css';
 import '@quasar/extras/fontawesome-v6/fontawesome-v6.css';
 import '@quasar/extras/themify/themify.css';
 import '@quasar/extras/line-awesome/line-awesome.css';
+import { Notify } from 'quasar';
 
 // Import Quasar css
 import 'quasar/src/css/index.sass';
@@ -27,7 +28,9 @@ import App from './App.vue';
 const myApp = createApp(App);
 
 myApp.use(Quasar, {
-  plugins: {}, // import Quasar plugins and add here
+  plugins: {
+    Notify,
+  }, // import Quasar plugins and add here
 });
 
 // Assumes you have a <div id="app"></div> in your index.html

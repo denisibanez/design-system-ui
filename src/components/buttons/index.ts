@@ -1,1 +1,1 @@
-export { default as BcButtons } from '../button/BcButtons.vue';
+export { default as QcButtons } from '../button/QcButtons.vue';

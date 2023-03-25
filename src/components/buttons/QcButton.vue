@@ -1,5 +1,5 @@
 <template>
-  <div class="bcButton__wrapper">
+  <div class="QcButton__wrapper">
     <q-btn
       :color="color"
       :label="label"

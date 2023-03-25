@@ -5,6 +5,7 @@ import '@quasar/extras/animate/fadeInUp.css';
 import '@quasar/extras/animate/fadeOutDown.css';
 import '@quasar/extras/animate/fadeInRight.css';
 import '@quasar/extras/animate/fadeOutRight.css';
+import { Notify } from "quasar";
 
 // Loads the quasar styles and registers quasar functionality with storybook
 import 'quasar/dist/quasar.css';
@@ -15,6 +16,9 @@ import { Quasar } from 'quasar';
 
 setup((app) => {
   app.use(Quasar, {
+    plugins: {
+      Notify,
+    }, // import Quasar plugins and add here
     config: {
       brand: {
         primary: '#1976d2',
