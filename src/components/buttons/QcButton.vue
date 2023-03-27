@@ -17,7 +17,10 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps({
+import { ExtractPropTypes } from 'vue';
+import QcButtonInterface from './QcButton';
+
+const props: Readonly<ExtractPropTypes<QcButtonInterface>> = defineProps({
   color: String,
   label: String,
   outline: Boolean,

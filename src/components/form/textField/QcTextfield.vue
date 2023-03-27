@@ -10,11 +10,14 @@
 </template>
 
 <script lang="ts" setup>
-import { Ref, ref, defineEmits } from 'vue';
+import { Ref, ref, defineEmits, ExtractPropTypes } from 'vue';
+import QcTextfieldInterface from './QcTextfield';
 
-const props = defineProps({
+const props: Readonly<ExtractPropTypes<QcTextfieldInterface>> = defineProps({
   label: String,
 });
+
+console.log(props)
 
 const $emit = defineEmits(['onInputChange']);
 
