@@ -89,8 +89,7 @@
     "url": "https://github.com/denisibanez/design-system-ui"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com",
-    "types": "./dist/main.d.ts"
+    "registry": "https://npm.pkg.github.com"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix"

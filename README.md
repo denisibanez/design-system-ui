@@ -42,8 +42,13 @@ The app use:
 * "npm run test -- --coverage" to run tests with jest
 
 # To publish package
-* npm runu build
-* set github token in file .npmrc
+* add this line in package.json 
+* "types": "./dist/main.d.ts"
+* npm run build
+* set github token in your system variables
+* MAC OS
+* export GITHUBTOKEN="YOUR_TOKEN"
+* echo $GITHUBTOKEN
 * npm publish
 
 # To install 
