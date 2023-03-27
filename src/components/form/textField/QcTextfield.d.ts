@@ -1,3 +1,3 @@
 export default interface QcTextfieldInterface {
-  label: string,
+  label: string;
 }

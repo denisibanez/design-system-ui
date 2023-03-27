@@ -17,7 +17,7 @@ const props: Readonly<ExtractPropTypes<QcTextfieldInterface>> = defineProps({
   label: String,
 });
 
-console.log(props)
+console.log(props);
 
 const $emit = defineEmits(['onInputChange']);
 
