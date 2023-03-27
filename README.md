@@ -42,12 +42,15 @@ The app use:
 * "npm run test -- --coverage --u" to run tests with jest
 
 # To publish package
-1. npm run build
-2. set github token in your system variables
+1. add this line in package.json 
+* "types": "./dist/main.d.ts"
+2. npm run build
+3. set github token in your system variables
 * MAC OS
 * export GITHUBTOKEN="YOUR_TOKEN"
 * echo $GITHUBTOKEN
-3. npm publish
+4. npm publish
+5. Remove types line of package.json
 
 # To install 
 * npm install @denisibanez/design-system-ui@latest
