@@ -13,4 +13,4 @@ export default {
   },
 };
 
-export { QcButton , QcTextfield, QcSnackbar, QcLoading};
+export { QcButton, QcTextfield, QcSnackbar, QcLoading };

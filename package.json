@@ -1,7 +1,7 @@
 {
   "name": "@denisibanez/design-system-ui",
   "private": false,
-  "version": "0.1.9",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -72,7 +72,6 @@
   "files": [
     "dist"
   ],
-  "types": "./dist/main.d.ts",
   "main": "./dist/design-system-ui.umd.js",
   "module": "./dist/design-system-ui.es.js",
   "exports": {
@@ -90,7 +89,8 @@
     "url": "https://github.com/denisibanez/design-system-ui"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com",
+    "types": "./dist/main.d.ts"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix"

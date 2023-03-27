@@ -6,7 +6,7 @@ export default {
   component: QcTextfield,
   // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes
   argTypes: {
-    onInput: { action: 'clicked' } 
+    onInput: { action: 'clicked' },
   },
 };
 
