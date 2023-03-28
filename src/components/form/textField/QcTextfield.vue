@@ -17,6 +17,7 @@ import { Ref, ref } from 'vue';
 
 export interface QcTextfieldInterface {
   label: string;
+  model: null|string,
   types:
     | 'number'
     | 'text'
@@ -36,6 +37,7 @@ export interface QcTextfieldInterface {
 const props = withDefaults(defineProps<QcTextfieldInterface>(), {
   label: 'Label',
   types: 'text',
+  model: null,
 });
 
 console.log(props);
