@@ -17,7 +17,7 @@ const Template = (args) => ({
     return { args };
   },
   // And then the `args` are bound to your component with `v-bind="args"`
-  template: '<Qclayout v-bind="args" @navigate="onClick" @logoff="onClick" />',
+  template: '<Qclayout v-bind="args" />',
 });
 
 export const Primary = Template.bind({});
