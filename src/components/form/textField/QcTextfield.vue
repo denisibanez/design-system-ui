@@ -15,7 +15,7 @@
 <script lang="ts" setup>
 export interface QcTextfieldInterface {
   label: string;
-  value: string  | null  | number;
+  value: string | null | number;
   types:
     | 'number'
     | 'text'
@@ -35,7 +35,7 @@ export interface QcTextfieldInterface {
 const props = withDefaults(defineProps<QcTextfieldInterface>(), {
   label: 'Label',
   types: 'text',
-  value: ''
+  value: '',
 });
 
 const $emit = defineEmits(['onInputChange']);

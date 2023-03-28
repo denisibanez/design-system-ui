@@ -15,7 +15,7 @@
           label="label"
           types="text"
           @onInputChange="user = $event"
-          />
+        />
         <p class="q-pa-md">{{ user }}</p>
         <div class="row">
           <QcButton
@@ -49,8 +49,8 @@ import QcButton from './components/buttons/QcButton.vue';
 const loading: Ref<boolean> = ref(false);
 const myForm = ref();
 
-const user = ref(null)
-const input = ref()
+const user = ref(null);
+const input = ref();
 
 // METHODS
 function onSubmit() {
@@ -61,7 +61,7 @@ function onSubmit() {
 }
 
 function onReset() {
-  user.value =null
+  user.value = null;
 }
 </script>
 
