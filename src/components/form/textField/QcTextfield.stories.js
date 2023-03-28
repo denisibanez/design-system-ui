@@ -36,7 +36,7 @@ const Template = (args) => ({
     return { args };
   },
   // And then the `args` are bound to your component with `v-bind="args"`
-  template: '<QcTextfield v-bind="args" @onInputChange="onInput"/>',
+  template: '<QcTextfield v-bind="args" />',
 });
 
 export const Primary = Template.bind({});
@@ -45,4 +45,5 @@ Primary.args = {
   label: 'label',
   types: 'text',
   rules: [(val) => (val !== null && val !== '') || 'Campo obrigatório'],
+  model: '',
 };

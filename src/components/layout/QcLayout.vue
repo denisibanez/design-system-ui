@@ -20,7 +20,7 @@
 
       <q-drawer v-model="leftDrawerOpen.value" show-if-above bordered>
         <q-list>
-          <q-item-label layout v-for="item in menu" @click="navigate(item)">
+          <q-item-label header v-for="item in menu" @click="navigate(item)">
             {{ item.label }}
           </q-item-label>
         </q-list>
