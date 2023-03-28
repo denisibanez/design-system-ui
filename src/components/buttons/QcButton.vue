@@ -20,14 +20,14 @@
 
 <script setup lang="ts">
 export interface QcButtonInterface {
-  color: string;
-  label: string;
-  outline: boolean;
+  color?: string;
+  label?: string;
+  outline?: boolean;
   icon?: string;
-  round: boolean;
-  size: string;
-  loading: boolean;
-  flat: boolean;
+  round?: boolean;
+  size?: string;
+  loading?: boolean;
+  flat?: boolean;
   type?: string;
 }
 

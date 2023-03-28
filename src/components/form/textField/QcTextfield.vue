@@ -1,23 +1,21 @@
 <template>
   <div class="QcTextfield__wrapper">
     <q-input
-      v-model="localModel"
-      :label="label"
       outlined
       lazy-rules
+      :label="label"
       :rules="rules"
       :type="types"
-      @update:model-value="(newValue) => onInput(newValue)"
+      :model-value="value"
+      @update:model-value="onInput($event)"
     />
   </div>
 </template>
 
 <script lang="ts" setup>
-import { Ref, ref, watch, watchEffect } from 'vue';
-
 export interface QcTextfieldInterface {
   label: string;
-  model: null | string;
+  value: string  | null  | number;
   types:
     | 'number'
     | 'text'
@@ -37,17 +35,12 @@ export interface QcTextfieldInterface {
 const props = withDefaults(defineProps<QcTextfieldInterface>(), {
   label: 'Label',
   types: 'text',
-  model: null,
+  value: ''
 });
-
-console.log(props);
 
 const $emit = defineEmits(['onInputChange']);
 
-let localModel: Ref<string | null | number> = ref(null);
-
 function onInput(text: string | null | number) {
-  localModel = ref(props.model);
   $emit('onInputChange', text);
 }
 </script>

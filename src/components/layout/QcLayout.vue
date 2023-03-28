@@ -42,9 +42,9 @@ export interface MenuInterface {
 }
 
 export interface QclayoutInterface {
-  appName: string;
-  logoffLabel: string;
-  menu: any;
+  appName?: string;
+  logoffLabel?: string;
+  menu?: any
 }
 
 const props = withDefaults(defineProps<QclayoutInterface>(), {

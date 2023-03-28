@@ -8,11 +8,15 @@
         ref="myForm"
       >
         <QcTextfield
-          :model="model"
+          :value="user"
           :rules="[
             (val: any) => (val !== null && val !== '') || 'Campo obrigatório',
           ]"
-        />
+          label="label"
+          types="text"
+          @onInputChange="user = $event"
+          />
+        <p class="q-pa-md">{{ user }}</p>
         <div class="row">
           <QcButton
             size="md"
@@ -38,13 +42,15 @@
 <!-- Example use component -->
 <script setup lang="ts">
 import QcLayout from './components/layout/QcLayout.vue';
-import { reactive, Ref, ref } from 'vue';
+import { Ref, ref } from 'vue';
 import QcTextfield from './components/form/textField/QcTextfield.vue';
 import QcButton from './components/buttons/QcButton.vue';
 
 const loading: Ref<boolean> = ref(false);
-let model: any = ref(null);
 const myForm = ref();
+
+const user = ref(null)
+const input = ref()
 
 // METHODS
 function onSubmit() {
@@ -55,8 +61,7 @@ function onSubmit() {
 }
 
 function onReset() {
-  model = null;
-  console.log(model);
+  user.value =null
 }
 </script>
 
