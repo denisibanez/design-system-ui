@@ -8,9 +8,7 @@ const loading: Ref<boolean> = ref(false);
 
 <template>
   <div class="wrapper">
-    <QcLayout>
-      Teste
-    </QcLayout>
+    <QcLayout> Teste </QcLayout>
   </div>
 </template>
 

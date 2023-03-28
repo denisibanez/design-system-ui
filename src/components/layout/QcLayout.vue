@@ -16,20 +16,20 @@
 
           <div @click="logoff" style="cursor: pointer">{{ logoffLabel }}</div>
         </q-toolbar>
-        </q-header>
+      </q-header>
 
-        <q-drawer v-model="leftDrawerOpen.value" show-if-above bordered>
-          <q-list>
-            <q-item-label layout v-for="item in menu" @click="navigate(item)">
-              {{ item.label }}
-            </q-item-label>
-          </q-list>
-        </q-drawer>
+      <q-drawer v-model="leftDrawerOpen.value" show-if-above bordered>
+        <q-list>
+          <q-item-label layout v-for="item in menu" @click="navigate(item)">
+            {{ item.label }}
+          </q-item-label>
+        </q-list>
+      </q-drawer>
 
-        <q-page-container>
-          <slot></slot>
-        </q-page-container>
-      </q-layout>
+      <q-page-container>
+        <slot></slot>
+      </q-page-container>
+    </q-layout>
   </div>
 </template>
 

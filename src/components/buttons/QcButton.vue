@@ -28,7 +28,7 @@ export interface QcButtonInterface {
   size: string;
   loading: boolean;
   flat: boolean;
-  type?: string,
+  type?: string;
 }
 
 const props = withDefaults(defineProps<QcButtonInterface>(), {

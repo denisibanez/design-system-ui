@@ -56,5 +56,5 @@ Primary.args = {
   round: false,
   outline: false,
   color: 'primary',
-  type: 'submit'
+  type: 'submit',
 };
