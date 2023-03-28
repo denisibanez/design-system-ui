@@ -7,14 +7,18 @@
 </template>
 
 <script setup lang="ts">
-import { ExtractPropTypes } from 'vue';
-import QcLoadingInterface from './QcLoading';
+export interface QcLoadingInterface {
+  color: string;
+  size: string;
+  loading: boolean;
+  text: string;
+}
 
-const props: Readonly<ExtractPropTypes<QcLoadingInterface>> = defineProps({
-  color: String,
-  size: String,
-  loading: Boolean,
-  text: String,
+const props = withDefaults(defineProps<QcLoadingInterface>(), {
+  color: 'primary',
+  size: 'lg',
+  loading: false,
+  text: 'Carregando',
 });
 </script>
 

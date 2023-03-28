@@ -2,7 +2,7 @@ import QcButton from './QcButton.vue';
 
 // More on default export: https://storybook.js.org/docs/vue/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Button',
+  title: 'Components/Button',
   component: QcButton,
   // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes
   argTypes: {
@@ -45,7 +45,7 @@ const Template = (args) => ({
     return { args };
   },
   // And then the `args` are bound to your component with `v-bind="args"`
-  template: '<QcButton v-bind="args" />',
+  template: '<QcButton v-bind="args" @click.capture="onClick" />',
 });
 
 export const Primary = Template.bind({});
@@ -56,4 +56,5 @@ Primary.args = {
   round: false,
   outline: false,
   color: 'primary',
+  type: 'submit'
 };

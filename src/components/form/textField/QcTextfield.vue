@@ -4,17 +4,38 @@
       v-model="model"
       :label="label"
       outlined
+      lazy-rules
+      :rules="rules"
+      :type="types"
       @update:model-value="(newValue) => onInput(newValue)"
     />
   </div>
 </template>
 
 <script lang="ts" setup>
-import { Ref, ref, defineEmits, ExtractPropTypes } from 'vue';
-import QcTextfieldInterface from './QcTextfield';
+import { Ref, ref } from 'vue';
 
-const props: Readonly<ExtractPropTypes<QcTextfieldInterface>> = defineProps({
-  label: String,
+export interface QcTextfieldInterface {
+  label: string;
+  types:
+    | 'number'
+    | 'text'
+    | 'password'
+    | 'textarea'
+    | 'email'
+    | 'search'
+    | 'tel'
+    | 'file'
+    | 'url'
+    | 'time'
+    | 'date'
+    | undefined;
+  rules: Array<any>;
+}
+
+const props = withDefaults(defineProps<QcTextfieldInterface>(), {
+  label: 'Label',
+  types: 'text',
 });
 
 console.log(props);
