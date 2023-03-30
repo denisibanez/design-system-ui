@@ -39,7 +39,7 @@ The app use:
 * "npm run build-storybook" to build Design System
 * "npm run lint:fix" to check and fix code errors
 * "npm run format" to format code
-* "npm run test -- --coverage --u" to run tests with jest
+* "npm run test" to run tests with jest
 
 # To publish package
 1. add this line in package.json 
