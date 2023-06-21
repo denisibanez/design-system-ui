@@ -36,14 +36,16 @@ const Template = (args) => ({
     return { args };
   },
   // And then the `args` are bound to your component with `v-bind="args"`
-  template: '<QcTextfield v-bind="args" @onInputChange="value = $event" />',
+  template:
+    '<QcTextfield v-bind="args" @onInputChange="value = $event" @onChangePasswordVisibility="types = $event" />',
 });
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/vue/writing-stories/args
 Primary.args = {
   label: 'label',
-  types: 'text',
+  types: 'password',
   rules: [(val) => (val !== null && val !== '') || 'Campo obrigatório'],
   value: '',
+  icon: 'visibility_off',
 };

@@ -53,4 +53,4 @@ The app use:
 5. Remove types line of package.json
 
 # To install 
-* npm install @denisibanez/design-system-ui@latest
+* npm install @corporate/design-system-ui@latest

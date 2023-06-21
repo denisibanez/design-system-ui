@@ -1,1 +1,1 @@
-export { default as QcTextfield } from '../button/QcTextfield.vue';
+export { default as QcTextfield } from '../form/textField/QcTextfield.vue';

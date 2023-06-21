@@ -1,1 +1,1 @@
-export { default as QcLoading } from '../button/QcLoading.vue';
+export { default as QcLoading } from '../loading/QcLoading.vue';

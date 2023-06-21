@@ -25,10 +25,70 @@ export const Primary = Template.bind({});
 Primary.args = {
   appName: 'Nome da app',
   logoffLabel: 'Sair',
+  optionsMenu: [
+    {
+      router: '/',
+      id: 1,
+      label: 'Teste',
+      icon: 'home',
+    },
+    {
+      router: '/',
+      id: 2,
+      label: 'Teste',
+      icon: 'settings',
+    },
+    {
+      router: '/',
+      id: 3,
+      label: 'Sub-menu',
+      icon: 'menu',
+      submenu: [
+        {
+          separator: true,
+          router: '/',
+          id: 4,
+          label: 'Item',
+          icon: 'download',
+          items: [
+            {
+              separator: true,
+              router: '/',
+              id: 5,
+              label: 'Teste',
+              icon: 'settings',
+            },
+            {
+              separator: true,
+              router: '/',
+              id: 6,
+              label: 'Teste',
+              icon: 'settings',
+            },
+          ],
+        },
+      ],
+    },
+  ],
+
   menu: [
     {
-      label: 'menu item',
+      label: 'Menu item',
       route: '/',
+      icon: 'home',
+      separator: true,
+    },
+    {
+      label: 'Menu item',
+      route: '/',
+      icon: 'home',
+      separator: true,
+    },
+    {
+      label: 'Menu item',
+      route: '/',
+      icon: 'home',
+      separator: true,
     },
   ],
 };

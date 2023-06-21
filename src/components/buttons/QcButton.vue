@@ -1,21 +1,21 @@
 <template>
-  <div class="QcButton__wrapper">
-    <q-btn
-      :color="color"
-      :label="label"
-      :icon="icon"
-      :outline="outline"
-      :round="round"
-      :size="size"
-      :loading="loading"
-      :flat="flat"
-      :type="type"
-    >
-      <template v-slot:loading>
-        <q-spinner-facebook />
-      </template>
-    </q-btn>
-  </div>
+  <q-btn
+    :color="color"
+    :label="label"
+    :icon="icon"
+    :outline="outline"
+    :round="round"
+    :size="size"
+    :loading="loading"
+    :flat="flat"
+    :type="type"
+    :text-color="textColor"
+    class="QcButton__wrapper"
+  >
+    <template v-slot:loading>
+      <q-spinner-facebook />
+    </template>
+  </q-btn>
 </template>
 
 <script setup lang="ts">
@@ -29,6 +29,7 @@ export interface QcButtonInterface {
   loading?: boolean;
   flat?: boolean;
   type?: string;
+  textColor?: string;
 }
 
 const props = withDefaults(defineProps<QcButtonInterface>(), {
@@ -39,6 +40,7 @@ const props = withDefaults(defineProps<QcButtonInterface>(), {
   size: 'lg',
   loading: false,
   flat: false,
+  textColor: 'white',
 });
 </script>
 

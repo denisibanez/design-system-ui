@@ -1,1 +1,1 @@
-export { default as QcSnackbar } from '../button/QcSnackbar.vue';
+export { default as QcSnackbar } from '../snackbar/QcSnackbar.vue';

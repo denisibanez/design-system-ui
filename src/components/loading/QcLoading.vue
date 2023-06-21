@@ -8,10 +8,10 @@
 
 <script setup lang="ts">
 export interface QcLoadingInterface {
-  color: string;
-  size: string;
+  color?: string;
+  size?: string;
   loading: boolean;
-  text: string;
+  text?: string;
 }
 
 const props = withDefaults(defineProps<QcLoadingInterface>(), {

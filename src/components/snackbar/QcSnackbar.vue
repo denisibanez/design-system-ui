@@ -9,6 +9,7 @@ export interface QcSnackbarInterface {
   icon: string;
   actionLabelColor: string;
   textColor: string;
+  closeLabel: string;
 }
 
 const props = withDefaults(defineProps<QcSnackbarInterface>(), {
@@ -18,6 +19,7 @@ const props = withDefaults(defineProps<QcSnackbarInterface>(), {
   icon: 'warning',
   actionLabelColor: 'white',
   textColor: 'white',
+  closeLabel: 'Fechar',
 });
 
 const $q = useQuasar();
@@ -31,7 +33,11 @@ function showNotifs() {
     textColor: props.textColor,
     icon: props.icon,
     actions: [
-      { label: 'Fechar', color: props.actionLabelColor, handler: () => {} },
+      {
+        label: props.closeLabel,
+        color: props.actionLabelColor,
+        handler: () => {},
+      },
     ],
   });
 }
